@@ -1,0 +1,64 @@
+/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 64.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Orbitron", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(robot.gif);
+  background-position: center;
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  background-color: rgb(207, 75, 97);
+  font-size: 2rem;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  border-radius: 5px;
+
+  text-transform: uppercase;
+  /* box-shadow: 1rem 1rem 10rem 3rem rgb(207, 75, 97); */
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  box-shadow: 0.3rem 0.3rem 1rem 0.5rem rgba(207, 75, 97, 0.677);
+  filter: brightness(120%);
+}
+
+.btn:active {
+  transform: translateY(3px) scale(0.9);
+  box-shadow: 1rem 1rem 5rem 1rem rgb(207, 75, 97);
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
